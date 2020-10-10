@@ -1,0 +1,128 @@
+body {
+    background-color:#efefef;
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5 {
+    marign: 0 0 10px 0;
+    padding: 0;
+}
+header {
+    margin-top: 20px;
+}
+
+.container {
+    width: 920px;
+    margin: 0 auto 40px auto;
+}
+
+.header-title-area {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-size: 32px;
+}
+
+.text-sub {
+    color: #777;
+}
+
+.header-navigation {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.header-navigation:after {  /* afterは「擬似要素」.指定した要素の直後に何かを指定することができる */
+    clear: both; /* ここでは下記コマンドfloat:leftを解除して続く要素が回り込むことを回避する　*/
+    display: block;
+    content: " ";
+}
+
+.header-navigation li {
+    float: left;
+    padding: 0 30px;
+    text-align: center;
+    list-style-type: none;
+}
+
+.header-navigation li a {
+    color: #333;
+    text-decoration: none;
+}
+    
+.text-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.card-contents {
+    padding: 40px;
+    display: block;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.left-contents {
+    width: 600px;
+    margin-right: 20px;
+    float: left;
+}
+
+.right-contents {
+    width: 300px;  /* ２カラムを含むcontainerのサイズが920-左側600-余白20=300　となる*/
+    float: left;
+}
+
+.information-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.information-list li {
+    margin-bottom: 10px;
+}
+
+.staff-list-area:after { /* floatの解除 */
+    clear: both;
+    display: block;
+    content:" ";
+}
+
+.staff-list {
+    width: 150px;
+    margin-right: 35px;
+    float: left;
+}
+
+.staff-list:last-child { /* 同じ要素が並んでいる場合に最後の要素にだけ適用できる */
+    margin-right: 0;
+}
+
+.staff-image {
+    margin-bottom: 10px;
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+
+.staff-name {
+    text-align: center;
+}
+
+.copyright {
+    color:#777;
+    text-align: center;
+}
+
+.main:after {  /* mainのfloatを解除しないとfooterが回り込んでしまう　*/
+    clear: both;
+    display: block;
+    content: " ";
+}
